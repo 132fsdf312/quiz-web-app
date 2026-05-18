@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="480" viewBox="0 0 600 480">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="100%" style="stop-color:#764ba2"/>
+    </linearGradient>
+    <linearGradient id="btn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="100%" style="stop-color:#764ba2"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="20" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="600" height="480" fill="url(#bg)"/>
+
+  <!-- Card -->
+  <rect x="75" y="40" width="450" height="400" rx="20" fill="white" opacity="0.95" filter="url(#shadow)"/>
+
+  <!-- Logo emoji -->
+  <text x="300" y="100" text-anchor="middle" font-family="monospace" font-size="50">📝</text>
+
+  <!-- Title -->
+  <text x="300" y="140" text-anchor="middle" font-family="'Microsoft YaHei', sans-serif" font-size="24" font-weight="bold" fill="#333">大学社团在线答题</text>
+  <text x="300" y="162" text-anchor="middle" font-family="'Microsoft YaHei', sans-serif" font-size="13" fill="#999">请填写个人信息后开始答题</text>
+
+  <!-- Name field -->
+  <text x="105" y="200" font-family="'Microsoft YaHei', sans-serif" font-size="13" font-weight="600" fill="#555">姓名</text>
+  <rect x="105" y="210" width="390" height="48" rx="12" fill="#fafafa" stroke="#e0e0e0" stroke-width="2"/>
+  <text x="120" y="240" font-family="'Microsoft YaHei', sans-serif" font-size="15" fill="#bbb">请输入您的姓名</text>
+
+  <!-- Student ID field -->
+  <text x="105" y="282" font-family="'Microsoft YaHei', sans-serif" font-size="13" font-weight="600" fill="#555">学号</text>
+  <rect x="105" y="292" width="390" height="48" rx="12" fill="#fafafa" stroke="#e0e0e0" stroke-width="2"/>
+  <text x="120" y="322" font-family="'Microsoft YaHei', sans-serif" font-size="15" fill="#bbb">请输入您的学号</text>
+
+  <!-- Start button -->
+  <rect x="105" y="362" width="390" height="52" rx="12" fill="url(#btn)"/>
+  <text x="300" y="395" text-anchor="middle" font-family="'Microsoft YaHei', sans-serif" font-size="17" font-weight="600" fill="white">开始答题 🚀</text>
+</svg>

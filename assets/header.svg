@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="50%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#0f3460"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="100%" style="stop-color:#764ba2"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="200" fill="url(#bg)" rx="12"/>
+  <!-- Decorative circles -->
+  <circle cx="680" cy="45" r="35" fill="none" stroke="#667eea" stroke-width="0.8" opacity="0.3"/>
+  <circle cx="720" cy="65" r="20" fill="none" stroke="#764ba2" stroke-width="0.5" opacity="0.2"/>
+  <circle cx="120" cy="170" r="25" fill="none" stroke="#667eea" stroke-width="0.5" opacity="0.2"/>
+  <circle cx="160" cy="40" r="15" fill="none" stroke="#764ba2" stroke-width="0.5" opacity="0.15"/>
+  <!-- Icon -->
+  <text x="50" y="80" font-family="monospace" font-size="48">📝</text>
+  <!-- Title -->
+  <text x="105" y="78" font-family="monospace" font-size="42" font-weight="bold" fill="white">Quiz Web App</text>
+  <text x="105" y="108" font-family="monospace" font-size="16" fill="#a0a0b0">多人在线答题系统 · Express + MySQL</text>
+  <rect x="50" y="122" width="300" height="3" rx="1.5" fill="url(#accent)"/>
+  <text x="50" y="155" font-family="monospace" font-size="12" fill="#707080">选择题 / 判断题 / 简答题 · 自动评分 · 管理后台 · Docker</text>
+</svg>
