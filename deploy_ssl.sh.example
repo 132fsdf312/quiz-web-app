@@ -1,0 +1,28 @@
+#!/bin/bash
+# SSL 证书部署脚本（模板）
+# 使用前将证书内容填入对应位置
+# 实际证书文件请放到服务器安全目录，不要提交到 Git
+
+set -e
+
+DOMAIN="your-domain.com"
+
+echo "=== 备份旧证书 ==="
+cp /etc/nginx/ssl/${DOMAIN}.crt /etc/nginx/ssl/${DOMAIN}.crt.bak.$(date +%Y%m%d) 2>/dev/null || true
+
+echo "=== 写入新证书 ==="
+# 将你的证书内容粘贴到下面的文件
+echo "请手动将证书内容复制到 /etc/nginx/ssl/${DOMAIN}.crt"
+echo "请手动将私钥内容复制到 /etc/nginx/ssl/${DOMAIN}.key"
+
+echo "=== 设置权限 ==="
+chmod 644 /etc/nginx/ssl/${DOMAIN}.crt
+chmod 600 /etc/nginx/ssl/${DOMAIN}.key
+
+echo "=== 测试 Nginx 配置 ==="
+nginx -t
+
+echo "=== 重载 Nginx ==="
+systemctl reload nginx
+
+echo "✅ 证书部署完成！"

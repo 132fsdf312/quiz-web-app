@@ -1,0 +1,23 @@
+# 依赖
+node_modules/
+
+# 环境变量
+.env
+
+# 日志
+*.log
+
+# 系统文件
+.DS_Store
+
+# 🔴 敏感文件 - 包含服务器私钥、SSH密钥
+key/
+*.pem
+*.key
+authorized_keys
+sshd_config
+deploy_ssl.sh
+_秘密文件_已移除/
+
+# Docker
+daemon.json
