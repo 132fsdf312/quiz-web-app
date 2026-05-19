@@ -125,7 +125,7 @@ CREATE DATABASE quiz_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
 
 ### 3. 修改密码
-编辑 `database.js`，将 `root123456` 改为你的 MySQL 密码
+编辑 `database.js`，将 `your_password_here` 改为你的 MySQL 密码
 
 ### 4. 双击 `deploy.bat` 或手动执行：
 ```cmd
@@ -145,7 +145,7 @@ node server.js
 | DB_HOST | localhost | MySQL 主机 |
 | DB_PORT | 3306 | MySQL 端口 |
 | DB_USER | root | MySQL 用户名 |
-| DB_PASSWORD | root123456 | MySQL 密码 |
+| DB_PASSWORD | your_password_here | MySQL 密码 |
 | DB_NAME | quiz_db | 数据库名 |
 
 ---
@@ -153,7 +153,7 @@ node server.js
 ## 👨‍💼 管理员
 
 - 姓名：`admin`
-- 学号：`114514`
+- 学号：`（请自行配置）`
 - 登录后进入管理后台，可管理题库、查看成绩、导出记录
 
 ---

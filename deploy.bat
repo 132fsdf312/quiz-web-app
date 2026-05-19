@@ -40,13 +40,13 @@ echo.
 echo 默认配置：
 echo   主机: localhost:3306
 echo   用户: root
-echo   密码: root123456
+echo   密码: your_password_here
 echo   数据库: quiz_db （自动创建）
 echo.
 
 REM 创建数据库（尝试）
 echo 🔧 尝试创建数据库...
-mysql -u root -proot123456 -e "CREATE DATABASE IF NOT EXISTS quiz_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;" 2>nul
+mysql -u root -pyour_password_here -e "CREATE DATABASE IF NOT EXISTS quiz_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;" 2>nul
 if %errorlevel% equ 0 (
     echo ✅ 数据库 quiz_db 已创建
 ) else (

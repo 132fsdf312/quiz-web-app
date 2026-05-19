@@ -21,3 +21,6 @@ _秘密文件_已移除/
 
 # Docker
 daemon.json
+
+# 工作记录（包含敏感信息）
+.workbuddy/
